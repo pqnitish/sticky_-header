@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky Header & Fixed Footer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      z-index: 1000;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    main {
+      padding: 20px;
+      padding-bottom: 60px; /* to prevent content hiding behind footer */
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Sticky Header - Scroll Down
+  </header>
+
+  <main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Vestibulum convallis tincidunt purus, non faucibus libero.</p>
+    <p>Aliquam erat volutpat. Aenean vulputate purus at sagittis pharetra.</p>
+    <p>Proin laoreet sapien at quam viverra feugiat.</p>
+    <p>Integer vehicula mauris ut ligula commodo congue.</p>
+    <p>Duis nec leo eget massa pulvinar consectetur.</p>
+    <p>Maecenas gravida magna eu erat tincidunt, vitae mattis justo fermentum.</p>
+    <p>Ut tristique felis sit amet lectus ultricies, vel laoreet nunc ullamcorper.</p>
+    <p>Sed faucibus dolor nec velit cursus, ut posuere massa facilisis.</p>
+    <p>Praesent eu turpis in risus imperdiet gravida nec ut metus.</p>
+    <p>Donec at diam ut leo posuere sodales vel vitae lacus.</p>
+  </main>
+
+  <footer>
+    Fixed Footer - Always Visible
+  </footer>
+
+</body>
+</html>
